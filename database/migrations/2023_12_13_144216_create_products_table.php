@@ -25,6 +25,7 @@ return new class extends Migration
             //image
             $table->string('image')->nullable();
             $table->timestamps();
+            $table->boolean('is_best_seller')->default(false);
         });
     }
 
